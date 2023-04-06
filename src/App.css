@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+input{
+  border: 1px solid rgb(58, 58, 136);
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  padding-left: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.inputs{
+  gap: 5px;
+  margin-inline: 20px;
+}
+.btn-add{
+  background-color: rgb(18, 155, 18);
+  border-style: none;
+  padding-inline: 20px;
+  border-radius: 5px;
+  font-size: large;
+}
+.btn-edit{
+  background-color: rgb(85, 85, 249);
+  border-style: none;
   color: white;
+  padding: 10px;
+  padding-inline: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-delete{
+  background-color: red;
+  border-style: none;
+  color: white;
+  padding: 10px;
+  padding-inline: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th{
+  width: 220px;
+}
+td{
+  width: 200px;
+  text-align: center;
+  align-content: center;
+}
+.headings{
+  margin-block: 30px;
+}
+.row{
+  gap: 10px;
+}
+.edit-box{
+  width: 180px;
+}
+.btn-save{
+  background-color: rgb(39, 39, 193);
+  color: white;
+  border-style: none;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+.box{
+  padding: 10px;
 }
