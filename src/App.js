@@ -62,7 +62,7 @@ const App = () => {
           <input type="text" name="occupation" placeholder="Occupation" ref={occupationRef}/>
           <button type="submit" className='btn-add'>Add New</button>
         </form>
-        <form onSubmit={handleSubmit}>
+        
         <table> 
           <tr className='headings flex'>
             <th>Name</th>
@@ -72,12 +72,12 @@ const App = () => {
           </tr>
           {
             items.map((current)=>{
-              return updateState === current.id ?  <EditList key={current.id} id={current.id} name={current.name} dob={current.dob} occupation={current.occupation} items={items} setItems={setItems}/>:
+              return updateState === current.id ? <form onSubmit={handleSubmit}> <EditList key={current.id} id={current.id} name={current.name} dob={current.dob} occupation={current.occupation} items={items} setItems={setItems}/></form>:
               <Row key={current.id} id={current.id} name={current.name} dob={current.dob} occupation={current.occupation} updateState={updateState} setUpdateState={setUpdateState} items={items} setItems={setItems}/>
             })
           }
         </table>
-        </form>
+        
       </div>
     </>
   )
